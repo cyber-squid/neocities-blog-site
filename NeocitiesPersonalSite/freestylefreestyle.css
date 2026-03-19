@@ -1,0 +1,35 @@
+*{
+    margin:0%;
+    padding:0%;
+}
+
+body {
+    background-image: url(images/paint-space-bkg.png);
+    background-size: contain;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.construction-div-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 100px;
+    background-image: url(images/constructionbkg.jpg);
+    background-size: contain;
+}
+
+.basic-ahh-centered-div {
+    text-align: center;
+    padding: 20px 20px;
+    margin: 20px 5px;
+}
+
+.simple-box-div {
+    background-image: url(images/blue-polka-dot.png);
+    border-style: solid;
+    border-color: mediumturquoise;
+    border-radius: 10px;
+    padding: 7px;
+    margin: 20px;
+}
