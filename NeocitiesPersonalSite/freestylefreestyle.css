@@ -1,6 +1,14 @@
-*{
-    margin:0%;
-    padding:0%;
+/*need to set the body to this base value in order for banner to correctly reach screen edge,
+and it's not like this by default because... reasons???*/
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.tomorrow-regular {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
@@ -8,6 +16,22 @@ body {
     background-size: contain;
     background-attachment: fixed;
     background-size: 100% 100%;
+}
+
+a:link{
+    color:lightblue;
+}
+
+a:visited{
+    color:lavender;
+}
+
+a:hover{
+    color:lavender;
+}
+
+a:active{
+    color:lavenderblush;
 }
 
 .construction-div-container {
@@ -25,11 +49,39 @@ body {
     margin: 20px 5px;
 }
 
-.simple-box-div {
+.overarching-background {
+    margin: 0% 10%;
+    padding: 0% 1% 5% 1%;
+    background-color: rgba(181, 245, 236, 0.7); /* border: 10px solid transparent; border-image: url(images/crystal-stone-illustration-png.png) 200px round; border-image-width:10px;*/
+}
+
+
+.homepage-info-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.tablike-header-for-info-box {
+    width: 60%;
+    padding: 1%;
+    text-align: center;
+    color: aliceblue;
+    background-color: #207580;
+    margin-top: -38px;
+    margin-bottom: 10px;
+    border-radius: 15px 15px 0 0;
+}
+
+.basic-info-box {
     background-image: url(images/blue-polka-dot.png);
     border-style: solid;
-    border-color: mediumturquoise;
+    border-color: #207580;
     border-radius: 10px;
-    padding: 7px;
-    margin: 20px;
+    padding: 10px;
+    margin: 0% 0.7% 7px;
+    font-family: "Tomorrow", "Jockey One", "Kdam Thmor Pro", "Passion One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }

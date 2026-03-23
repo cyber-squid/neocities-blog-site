@@ -10,80 +10,196 @@
 
     <link rel="icon" type="image/x-icon" href="images/hamtaro-wave.png">
     <link rel="stylesheet" href="freestylefreestyle.css">
+
+    <script src="funcs-and-things.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Kdam+Thmor+Pro&family=Passion+One:wght@400;700;900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tomorrow|Jockey-One"-->
 </head>
 
-<!--need to set the body to thids base value in order for banner to correctly reach screen edge, 
-    and it's not like this by default because... reasons???-->
-<body style="max-width: 100%; margin: 0; padding: 0;">
+
+
+
+<body>
 
     <!-- i'm thinking... a banner up top with possibly some art of mine.
         then -->
-
     <!--pinky promising myself i'll come back and pull the styles out into their own classes in the stylesheet-->
 
-    <header>
-        <div style="max-width:100%; margin:0; padding:0%; background-image:url(images/crystal-bkg.jpg);">
+    <header style="font-family:Tomorrow, sans-serif;">
+        <div style="max-width:100%; margin:0; padding-top:6%; background-image:url(images/crystal-bkg.jpg);">
 
-            <h2 style="padding:1%">Fluffy Space Dragon</h2> <!--link this to the home page!-->
+            <img src="images/stardust-refsheet-border-top.png" style="width:75%; height:27%; position:absolute; top:0; pointer-events:none;" />
 
-            <div style="max-width:100%; padding:0.5%; margin:0%; margin-top:2%; background-color:midnightblue">
-                <ul style="max-width:100%; margin:0%; display:flex; justify-content:center; gap:10%; color:white;">
-                    <li>one</li>
-                    <li>two</li>
-                    <li>three</li>
-                    <li>COMMISSIONS</li>
+            <img src="images/space-dragon-logo.png" style="width:25%; height:20%; position:absolute; top:3%; padding-left:1%; pointer-events:none;" />
+
+            <!--h1 style="padding:3.5% 1.5% 1.5%; position:absolute; top:0; color:azure;">Fluffy Space Dragon</!--h1> <!--link this to the home page!-->
+
+            <div style="max-width: 100%; padding: 0.7%; margin: 0%; margin-top: 2%; background-color: #0c335c; ">
+                <ul style="max-width:100%; margin:0%; padding-left:30%; padding-right:5%; display:flex; justify-content:flex-end; flex-wrap:wrap; gap:10%; color:white;">
+                    <li><a href="file:///C:/Users/RazerBlade15/source/repos/NeocitiesPersonalSite/NeocitiesPersonalSite/homepage.html">Home</a></li>
+                    <li><a href="file:///C:/Users/RazerBlade15/source/repos/NeocitiesPersonalSite/NeocitiesPersonalSite/art-things.html">My Art</a></li>
+                    <li>Other Hobbies</li>
+                    <li><a href="file:///C:/Users/RazerBlade15/source/repos/NeocitiesPersonalSite/NeocitiesPersonalSite/personal-collections.html">Stuff Collections</a></li>
+                    <li>Commissions!</li>
                 </ul>
             </div>
-            
+
         </div>
     </header>
 
 
+    <!--the background and its margin. obvs-->
+    <!--inner divs have margins on top so the first divs are equally distant from the header, and the background has padding on the bottom to complete the look-->
+    <div class="overarching-background">
 
-    <div style="margin: 0% 10%; background-color: rgba(181, 245, 236, 0.7) ">
+        <!--flexbox row container for all the flexbox columns that make the home page-->
+        <div style="display:flex; justify-content:center; align-items:flex-start; gap: 0%; padding-top:6%; margin:0%">
 
-        <div style="display:flex; justify-content:center; align-items:flex-start; margin-top:2%;">
-            <div class="simple-box-div" style="width: 15%;">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li><a href="https://d.furaffinity.net/art/feetymcfoot/1623094096/1623094065.feetymcfoot_shadow_foot_show.png">My Art</a></li>
-                    <li>Other Hobbies</li>
-                    <li>Beloved Things</li>
-                    <li>Stuff Collections</li>
-                </ul>
+            <!--leftmost boxes-->
+            <div id="homepage-info-column" style="max-width:18%;">
+                <!--granular navigation for current page-->
+                <div class="basic-info-box">
+
+                    <div class="tablike-header-for-info-box">
+                        <h3>Nav</h3>
+                    </div>
+                    <ul style="padding-left:20%; padding-top:7%; padding-bottom:7%">
+                        <li>Landing Page</li>
+                        <li>Sitemap</li>
+                        <li>Contacts</li>
+                        <li>Links / Other</li>
+                        <li>Beloved Things</li>
+                    </ul>
+                </div>
+
+                <div class="basic-info-box" style="margin-top: 30px;">
+
+                    <div class="tablike-header-for-info-box">
+                        <h3>Updates</h3>
+                    </div>
+
+                    <div style="padding: 2%;">
+                        <h4>- 23/03/26 -</h4>
+                        <p style="font-size:13.5px">Working on site layout still. Added a section for current games, and blinkies! (manually...) TODO: Is it possible to automate these?! </p>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="simple-box-div" style="max-width:600px">
-                <h1>Welcome!</h1>
-                <p>
-                    You've reached my lil corner for all my stuff that doesn't really go elsewhere, but is still Stardust stuff.
-                    I'm many things... a space dragon, video game developer and enjoyer, digital artist, programmer, newbie 3D all-round artist, crocheter,
-                    wannabe Youtuber, fandom lurker, Lego Movie fanatic, collector of all sorts of things,
-                    from trading cards to plushies and toys, from games to rocks... unemployed... *cough* still working on that last one.
-                    <br /><br />
-                    While you're here, why not check out my other stuff? My art and things are here too! (Or at least I'm in the process of adding it!)
-                </p>
+
+            <!--center box-->
+            <div id="homepage-info-column" style="max-width:60%;">
+                <div class="basic-info-box" style="padding:4%;">
+
+                    <img src="images/stardust-pfp.png" style="float:right; min-width:15%; max-width:35%;" title="This is me. I'm Dusty :)"
+                         alt="(An image of a black, white and teal dragon with a fluffy mane)">
+
+                    <h1>Welcome!</h1>
+                    <p>
+                        You've reached my humble abode for all my stuff! At least, most of it. (Maybe I've got too much stuff. :p) I go by plenty of names,
+                        most commonly SquidInkarus, but you can call me by my sona name, Stardust, too!
+                        <br />
+                        I'm many things... a fluffy space dragon, video game developer and enjoyer, digital artist and frequent doodler, a programmer,
+                        newbie 3D all-round artist, crocheter, wannabe Youtuber, fandom lurker, Lego Movie fanatic, lover of reptiles, and collector of all
+                        sorts of trinkets and things, from trading cards to plushies and toys, from games and v-pets to rocks... the list goes on and on and on,
+                        but basically, I'm a nerd. xD
+                        <br /><br />
+                        This site is partly an exercise in webdev, but partly also a project I just think is neat. Old funky websites are cool! <br />
+                        While you're here, why not check out my other stuff? My art and things are here too! (Or at least I'm in the process of adding it!)
+
+
+                    </p>
+
+                    <br />
+
+                    <em style="text-align:center">ZERO percent of this site, or any of its text or images, were made with any use or assistance of generative AI.</em>
+                </div>
+
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <div class="basic-info-box" style="width:50%">
+                        <h3>add music?!</h3>
+                    </div>
+
+                    <div class="basic-info-box" style="width:50%; padding:2%;">
+                        <h3>Now  playing:</h3>
+                        <div style="display: flex; justify-content: center; align-items: center; gap:10px;">
+                            <img src="images/Blinkies/Games/slime-rancher.jpg" style="max-width:30%" />
+                            <img src="images/Blinkies/Games/brc.jpg" style="max-width:30%" />
+
+                        </div>
+                    </div>
+                    <!--fav music?!-->
+                    <!--things i'm playing-->
+                </div>
+
+                <div class="basic-info-box">
+                    <h3>A guestbook here would be cool</h3>
+                </div>
             </div>
 
-            <div class="simple-box-div" style="width: 15%; display:flex; justify-content:center; align-items:center; flex-direction:column;">
-                <h3>STUFF HERE?! Status or critter or thing I'm thinkin' bout?</h3>
-                <img src="images/crystal-cleffa.gif" style="width:50%" title="CLEFFA!!" alt="(Sprite of Cleffa from Pokemon Crystal)" />
+            <!--rightmost boxes-->
+            <div id="homepage-info-column" style="max-width: 20%;">
+                <!--fun widget-->
+
+                <div class="basic-info-box">
+
+                    <div class="tablike-header-for-info-box">
+                        <h3>Cool Thing</h3>
+                    </div>
+
+                    <div style="display:flex; justify-content:center; align-items:center; flex-direction:column; padding:7%;">
+                        <h3>STUFF HERE?! Status or critter or thing I'm thinkin' bout?</h3>
+                        <img src="images/crystal-cleffa.gif" style="width:50%" title="CLEFFA!!" alt="(Sprite of Cleffa from Pokemon Crystal)" />
+                    </div>
+                </div>
+
+
+                <!--should be on the right, under status-->
+                <div class="basic-info-box" style="margin-top:30px;">
+
+                    <div class="tablike-header-for-info-box">
+                        <h3>Blinkies!</h3>
+                    </div>
+
+                    <div style="display:flex; justify-content:center; align-items:center; flex-direction:column; gap:5px;">
+                        <img src="images/Blinkies/lucario.gif" />
+                        <img src="images/Blinkies/sparkle-on.gif" />
+                        <img src="images/Blinkies/fairy-type-trainer.gif" />
+                        <img src="images/Blinkies/fuck-ai-art.gif" />
+                        <img src="images/Blinkies/chocolate-fan.gif" />
+                        <img src="images/Blinkies/dvd-crazy.png" />
+                        <img src="images/Blinkies/ascii-yay.gif" />
+                        <img src="images/Blinkies/chiikawa.gif" />
+                    </div>
+                </div>
+
+                <div class="basic-info-box" style="margin-top: 30px;">
+
+                    <div class="tablike-header-for-info-box">
+                        <h3>Webrings</h3>
+                    </div>
+
+                    <div style="display:flex; justify-content:center; align-items:center; padding-bottom:70px;">
+                        <p>None atm ;w;</p>
+                    </div>
+
+                </div>
             </div>
+
         </div>
 
-        <img src="images/stardust-pfp.png" width="400" title="This is me. I'm Dusty :)" alt="(An image of a black, white and teal dragon with a fluffy mane)">
-
-        <!--should be on the right, under status-->
-        <div class="simple-box-div" style="width: 15%; display:flex; justify-content:center; align-items:center; flex-direction:column;">
-            <h3>Stamps :3</h3>
-        </div>
     </div>
 
+    <!--
+    <p>Other socials you can find me on!</p>
 
 
-    <p><a href="https://furaffinity.net">Hey btw you should check out this funny place</a></p>
-    <!--img src="https://d.furaffinity.net/art/waddledox/1733070782/1733070782.waddledox_lugia_cafe_1b.png"-->
+
+
     <p>Obligatory watermark<br><img src="/neocities.png"></p>
 
     <div class="construction-div-container">
@@ -104,6 +220,6 @@
         <img src="images/clefairyrbysprite.png" style="width: 20%; padding: 20px 30px;">
 
     </div>
-
+        -->
 </body>
 </html>
