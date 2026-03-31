@@ -11,12 +11,15 @@
     <link rel="icon" type="image/x-icon" href="images/hamtaro-wave.png">
     <link rel="stylesheet" href="freestylefreestyle.css">
 
-    <script src="funcs-and-things.js"></script>
+
+
+    <script type="text/javascript" src="components/header.js"></script>
+    <script type="text/javascript" src="components/footer.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Kdam+Thmor+Pro&family=Passion+One:wght@400;700;900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <!--link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tomorrow|Jockey-One"-->
 </head>
 
@@ -26,63 +29,54 @@
 <body>
 
     <!-- i'm thinking... a banner up top with possibly some art of mine.
-        then -->
+    then -->
     <!--pinky promising myself i'll come back and pull the styles out into their own classes in the stylesheet-->
-
-    <header style="font-family:Tomorrow, sans-serif;">
-        <div style="max-width:100%; margin:0; padding-top:6%; background-image:url(images/crystal-bkg.jpg);">
-
-            <img src="images/stardust-refsheet-border-top.png" style="width:75%; height:27%; position:absolute; top:0; pointer-events:none;" />
-
-            <img src="images/space-dragon-logo.png" style="width:25%; height:20%; position:absolute; top:3%; padding-left:1%; pointer-events:none;" />
-
-            <!--h1 style="padding:3.5% 1.5% 1.5%; position:absolute; top:0; color:azure;">Fluffy Space Dragon</!--h1> <!--link this to the home page!-->
-
-            <div style="max-width: 100%; padding: 0.7%; margin: 0%; margin-top: 2%; background-color: #0c335c; ">
-                <ul style="max-width:100%; margin:0%; padding-left:30%; padding-right:5%; display:flex; justify-content:flex-end; flex-wrap:wrap; gap:10%; color:white;">
-                    <li><a href="file:///C:/Users/RazerBlade15/source/repos/NeocitiesPersonalSite/NeocitiesPersonalSite/homepage.html">Home</a></li>
-                    <li><a href="file:///C:/Users/RazerBlade15/source/repos/NeocitiesPersonalSite/NeocitiesPersonalSite/art-things.html">My Art</a></li>
-                    <li>Other Hobbies</li>
-                    <li><a href="file:///C:/Users/RazerBlade15/source/repos/NeocitiesPersonalSite/NeocitiesPersonalSite/personal-collections.html">Stuff Collections</a></li>
-                    <li>Commissions!</li>
-                </ul>
-            </div>
-
-        </div>
-    </header>
-
+    <page-header></page-header>
 
     <!--the background and its margin. obvs-->
     <!--inner divs have margins on top so the first divs are equally distant from the header, and the background has padding on the bottom to complete the look-->
     <div class="overarching-background">
 
         <!--flexbox row container for all the flexbox columns that make the home page-->
-        <div style="display:flex; justify-content:center; align-items:flex-start; gap: 0%; padding-top:6%; margin:0%">
+        <div class="overarching-background-container">
 
             <!--leftmost boxes-->
             <div id="homepage-info-column" style="max-width:18%;">
                 <!--granular navigation for current page-->
-                <div class="basic-info-box">
+                <div class="basic-info-box" style="background-image: url(images/scanlines-dark.png); background-size: 200px; border-color: #114978 ">
 
-                    <div class="tablike-header-for-info-box">
+                    <div class="tablike-header-for-info-box" style="background-color: #114978 ">
                         <h3>Nav</h3>
                     </div>
                     <ul style="padding-left:20%; padding-top:7%; padding-bottom:7%">
-                        <li>Landing Page</li>
-                        <li>Sitemap</li>
+                        <li><button onclick="SwapToMain();">Landing Page</button></li>
+                        <li><button onclick="SwapToSitemap();">Sitemap</button></li>
                         <li>Contacts</li>
-                        <li>Links / Other</li>
+                        <li>Links / Resources</li>
                         <li>Beloved Things</li>
+                        <li>Q&A</li>
                     </ul>
                 </div>
 
-                <div class="basic-info-box" style="margin-top: 30px;">
+                <div class="basic-info-box" style="margin-top: 30px; background-image: url(images/scanlines-dark.png); background-size: 200px; border-color: #114978 ">
 
-                    <div class="tablike-header-for-info-box">
+                    <div class="tablike-header-for-info-box" style="background-color: #114978 ">
                         <h3>Updates</h3>
                     </div>
 
-                    <div style="padding: 2%;">
+                    <div style="padding: 2%; height:150px; overflow:auto;">
+
+                        <h4>- 30/03/26 -</h4>
+                        <p style="font-size:13.5px">I FORGOT TO WRITE UPDATES NOOOO,, today I managed to actually finally get the "haeder and footer I don't need to copy-paste" working though! Also started writing the sitemap</p>
+                        <h4>- 26/03/26 -</h4>
+                        <p style="font-size:13.5px">Added scrollbar to updates, section at bottom of home for stamps! AND BLINKIES SCROLLING! There is an issue with a gap that I did a silly fix for, not sure if there's a proper one?'</p>
+                        <br />
+                        <h4>- 25/03/26 -</h4>
+                        <p style="font-size:13.5px">Added footer section, changed scrollbars and put together a Starfy cursor. :3 I think my next goal is adding scroll to updates and blinkies, and getting a guestbook up.</p>
+                        <br />
+                        <h4>- 24/03/26 -</h4>
+                        <p style="font-size:13.5px">Wrote up a to-do list for all the stuff on the site I'd like to eventually add. Tried to use js to generate the header and footer so I don't have to copypaste the HTML for every little change, but failed...</p>
+                        <br />
                         <h4>- 23/03/26 -</h4>
                         <p style="font-size:13.5px">Working on site layout still. Added a section for current games, and blinkies! (manually...) TODO: Is it possible to automate these?! </p>
                     </div>
@@ -93,7 +87,7 @@
 
             <!--center box-->
             <div id="homepage-info-column" style="max-width:60%;">
-                <div class="basic-info-box" style="padding:4%;">
+                <div id="central-info-box" class="basic-info-box" style="padding:4%;">
 
                     <img src="images/stardust-pfp.png" style="float:right; min-width:15%; max-width:35%;" title="This is me. I'm Dusty :)"
                          alt="(An image of a black, white and teal dragon with a fluffy mane)">
@@ -105,41 +99,41 @@
                         <br />
                         I'm many things... a fluffy space dragon, video game developer and enjoyer, digital artist and frequent doodler, a programmer,
                         newbie 3D all-round artist, crocheter, wannabe Youtuber, fandom lurker, Lego Movie fanatic, lover of reptiles, and collector of all
-                        sorts of trinkets and things, from trading cards to plushies and toys, from games and v-pets to rocks... the list goes on and on and on,
-                        but basically, I'm a nerd. xD
+                        sorts of silly toys and trinkets and things... the list goes on and on and on! If you're also a nerd we'll probably get along great xD
                         <br /><br />
                         This site is partly an exercise in webdev, but partly also a project I just think is neat. Old funky websites are cool! <br />
                         While you're here, why not check out my other stuff? My art and things are here too! (Or at least I'm in the process of adding it!)
-
-
                     </p>
-
-                    <br />
-
-                    <em style="text-align:center">ZERO percent of this site, or any of its text or images, were made with any use or assistance of generative AI.</em>
                 </div>
 
                 <div style="display: flex; justify-content: center; align-items: center;">
                     <div class="basic-info-box" style="width:50%">
-                        <h3>add music?!</h3>
+                        <h3>add music?! or maybe this is where you'd get my blinkies, then music could be in the upper right or smt</h3>
                     </div>
 
-                    <div class="basic-info-box" style="width:50%; padding:2%;">
-                        <h3>Now  playing:</h3>
-                        <div style="display: flex; justify-content: center; align-items: center; gap:10px;">
-                            <img src="images/Blinkies/Games/slime-rancher.jpg" style="max-width:30%" />
-                            <img src="images/Blinkies/Games/brc.jpg" style="max-width:30%" />
+                    <div class="basic-info-box" style="width:50%; margin-top:30px;">
 
+                        <div class="tablike-header-for-info-box" style=" margin-top: -40px;">
+                            <!--i gotta figure out why it's rendering weird. wasn't doing that before-->
+                            <h3>Now  playing:</h3>
+                        </div>
+
+                        <div class="current-games-inner-box">
+                            <img src="images/Blinkies/Games/slime-rancher.jpg" title="Slime Rancher" alt="Slime Rancher" />
+                            <img src="images/Blinkies/Games/brc.jpg" title="Bomb Rush Cyberfunk" alt="Bomb Rush Cyberfunk" />
+                            <img src="images/Blinkies/Games/digimon-adventure-02.jpg" title="Digimon Adventure 02" alt="Digimon Adventure 02" />
                         </div>
                     </div>
                     <!--fav music?!-->
                     <!--things i'm playing-->
                 </div>
 
-                <div class="basic-info-box">
-                    <h3>A guestbook here would be cool</h3>
+                <div class="basic-info-box" style="padding:0;">
+                    <iframe src="https://fluffyspacedragon.atabook.org/" style="width:100%; height: 300px; border:none;" alt="guestbook"></iframe>
                 </div>
             </div>
+
+
 
             <!--rightmost boxes-->
             <div id="homepage-info-column" style="max-width: 20%;">
@@ -148,32 +142,45 @@
                 <div class="basic-info-box">
 
                     <div class="tablike-header-for-info-box">
-                        <h3>Cool Thing</h3>
+                        <h3>Critters</h3>
                     </div>
 
-                    <div style="display:flex; justify-content:center; align-items:center; flex-direction:column; padding:7%;">
-                        <h3>STUFF HERE?! Status or critter or thing I'm thinkin' bout?</h3>
-                        <img src="images/crystal-cleffa.gif" style="width:50%" title="CLEFFA!!" alt="(Sprite of Cleffa from Pokemon Crystal)" />
+                    <div style="display:flex; justify-content:center; align-items:center; flex-wrap: wrap;">
+                        <h3 style="padding:5%;">Click on my little dudes!</h3>
+                        <img src="images/cleffa-bw.png" style="width:55% " title="CLEFFA!!" alt="(Sprite of Cleffa from Pokemon Crystal)" />
+                        <img src="images/Guilmon.gif" style="width:45%" />
+                        <img src="images/ExVeemon.gif" style="width:45%" />
                     </div>
                 </div>
 
 
+
                 <!--should be on the right, under status-->
-                <div class="basic-info-box" style="margin-top:30px;">
+                <div class="basic-info-box" style="margin-top:30px; max-height:260px;">
 
                     <div class="tablike-header-for-info-box">
                         <h3>Blinkies!</h3>
                     </div>
 
-                    <div style="display:flex; justify-content:center; align-items:center; flex-direction:column; gap:5px;">
-                        <img src="images/Blinkies/lucario.gif" />
-                        <img src="images/Blinkies/sparkle-on.gif" />
-                        <img src="images/Blinkies/fairy-type-trainer.gif" />
-                        <img src="images/Blinkies/fuck-ai-art.gif" />
-                        <img src="images/Blinkies/chocolate-fan.gif" />
-                        <img src="images/Blinkies/dvd-crazy.png" />
-                        <img src="images/Blinkies/ascii-yay.gif" />
-                        <img src="images/Blinkies/chiikawa.gif" />
+                    <div class="blinkies-inner-box" style="max-height: 250px;">
+                        <div style="">
+                            <img src="images/Blinkies/lucario.gif" />
+                            <img src="images/Blinkies/sparkle-on.gif" />
+                            <img src="images/Blinkies/fairy-type-trainer.gif" />
+                            <img src="images/Blinkies/fuck-ai-art.gif" />
+                            <img src="images/Blinkies/chocolate-fan.gif" />
+                            <img src="images/Blinkies/dvd-crazy.png" />
+                            <img src="images/Blinkies/ascii-yay.gif" />
+                            <img src="images/Blinkies/chiikawa.gif" />
+                            <img src="images/Blinkies/honey-bee.webp" />
+                            <img src="images/Blinkies/must-have-coffee.webp" />
+                            <img src="images/Blinkies/cool-to-crochet.webp" />
+                            <img src="images/Blinkies/i-have-a-dragon-soul.gif" />
+                            <img src="images/Blinkies/i-heart-my-3ds.webp" />
+                            <img src="images/Blinkies/i-will-stay-silly-forever.webp" />
+                            <img src="images/Blinkies/dont-take-my-whimsy.webp" />
+                            <img src="images/Blinkies/world-is-a-frick.gif" />
+                        </div>
                     </div>
                 </div>
 
@@ -192,7 +199,29 @@
 
         </div>
 
+
+        <div style="margin-bottom: 3%; padding:20px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; background-color: rgba(32, 117, 128, 0.5)">
+
+            <img src="images/Blinkies/Stamps/archive.webp" />
+            <img src="images/Blinkies/Stamps/cappucino-cinnamo.webp" />
+            <img src="images/Blinkies/Stamps/teacup-steaming.gif" />
+            <img src="images/Blinkies/Stamps/coding stamp.png" />
+            <img src="images/Blinkies/Stamps/espurr-kawaii-card.png" />
+            <img src="images/Blinkies/Stamps/pokemon-card-pile.png" />
+            <img src="images/Blinkies/Stamps/i-heart-wii.png" />
+            <img src="images/Blinkies/Stamps/mylaptop.png" />
+            <img src="images/Blinkies/Stamps/chococat.jpg" />
+            <img src="images/Blinkies/Stamps/sonicteam.gif" />
+            <img src="images/Blinkies/Stamps/don-osu.png" />
+            <img src="images/Blinkies/Stamps/evil.png" />
+            <img src="images/Blinkies/Stamps/cat-lover.webp" />
+            <img src="images/Blinkies/Stamps/neon-aquarium.png" />
+            <img src="images/Blinkies/Stamps/sleepy-cat.webp" />
+        </div>
     </div>
+
+
+    <page-footer></page-footer>
 
     <!--
     <p>Other socials you can find me on!</p>
@@ -221,5 +250,11 @@
 
     </div>
         -->
+
+    <script type="text/javascript" src="components/HomePageSwitcher.js"></script>
+
+    <script type="text/javascript" src="components/MarqueeScroll.js"></script>
+
+
 </body>
 </html>

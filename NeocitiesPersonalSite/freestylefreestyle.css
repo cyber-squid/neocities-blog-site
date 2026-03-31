@@ -3,6 +3,9 @@ and it's not like this by default because... reasons???*/
 * {
     margin: 0%;
     padding: 0%;
+    cursor: url(images/UI/Starfy1.png), auto;
+    scrollbar-width: thin;
+    scrollbar-color: #207580 #B5F5EC;
 }
 
 .tomorrow-regular {
@@ -16,6 +19,10 @@ body {
     background-size: contain;
     background-attachment: fixed;
     background-size: 100% 100%;
+}
+
+a {
+    cursor: url(images/UI/Starfy2.png), pointer;
 }
 
 a:link{
@@ -32,6 +39,34 @@ a:hover{
 
 a:active{
     color:lavenderblush;
+}
+h1
+{
+    font-family:"Audiowide", sans-serif;
+}
+h2 {
+    font-family: "Audiowide", sans-serif;
+}
+h3 {
+    font-family: "Audiowide", sans-serif;
+}
+h4 {
+    font-family: "Audiowide", sans-serif;
+}
+
+
+button {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background: none;
+    border: none;
+    color: #3d0f6b;
+    cursor: url(images/UI/Starfy2.png), pointer;
+}
+
+button:hover{
+    color:aquamarine
 }
 
 .construction-div-container {
@@ -50,9 +85,22 @@ a:active{
 }
 
 .overarching-background {
+    /* From https://css.glass */
+    background: rgba(181, 245, 236, 0.6);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(5.9px);
+    border: 1px solid rgba(181, 245, 236, 0.32);
     margin: 0% 10%;
-    padding: 0% 1% 5% 1%;
-    background-color: rgba(181, 245, 236, 0.7); /* border: 10px solid transparent; border-image: url(images/crystal-stone-illustration-png.png) 200px round; border-image-width:10px;*/
+     /*#B5F5EC*/ /* border: 10px solid transparent; border-image: url(images/crystal-stone-illustration-png.png) 200px round; border-image-width:10px;*/
+}
+
+.overarching-background-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0%;
+    padding: 70px 1.5% 5% 1.5%;
+    margin: 0%;
 }
 
 
@@ -84,4 +132,72 @@ a:active{
     font-family: "Tomorrow", "Jockey One", "Kdam Thmor Pro", "Passion One", sans-serif;
     font-weight: 500;
     font-style: normal;
+}
+
+#central-info-box{
+
+}
+
+#sitemap-button{
+
+}
+
+.current-games-inner-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap:wrap;
+}
+
+.current-games-inner-box img{
+    max-width:27%;
+    border-radius:10px;
+    border:2.5px dashed navy;
+}
+
+
+/*centering for the div and its copy so they're displayed the same. */
+.blinkies-inner-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+    .blinkies-inner-box img {
+        max-width: 100%;
+    }
+
+    .blinkies-inner-box div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom:5.5px; /*gap between original and copy*/
+        gap: 5px;
+        transform: translateY(100%);
+        animation: marquee-scroll 24s linear infinite;
+        animation-delay: -12s;
+    }
+        /* copy of our div full of blinkie images. appended under the original so they can use the same animation timer*/
+        .blinkies-inner-box div.follower {
+            position: absolute;
+            top: 0;
+            animation-delay: -2.2s; /*stupid fix for a gap appearing between the og and copy ;-;*/
+        }
+        .blinkies-inner-box div.play {
+            animation-play-state: running;
+        }
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
 }

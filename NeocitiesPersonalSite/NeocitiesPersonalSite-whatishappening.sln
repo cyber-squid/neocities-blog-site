@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "NeocitiesPersonalSite", "NeocitiesPersonalSite.esproj", "{FF526128-9F8D-4381-8FE3-BB85B6F8DFCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF526128-9F8D-4381-8FE3-BB85B6F8DFCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF526128-9F8D-4381-8FE3-BB85B6F8DFCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF526128-9F8D-4381-8FE3-BB85B6F8DFCE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FF526128-9F8D-4381-8FE3-BB85B6F8DFCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF526128-9F8D-4381-8FE3-BB85B6F8DFCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF526128-9F8D-4381-8FE3-BB85B6F8DFCE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0767D13D-4F9E-4BC1-8903-BDF6C9AB4328}
+	EndGlobalSection
+EndGlobal

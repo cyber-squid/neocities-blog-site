@@ -30,7 +30,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="freestylefreestyle.css" />
+    <Content Include="header.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="homepage.html" />
+    <Content Include="art-things.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="personal-collections.html">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="server.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
