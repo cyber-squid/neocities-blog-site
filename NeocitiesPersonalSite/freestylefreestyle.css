@@ -25,21 +25,6 @@ a {
     cursor: url(images/UI/Starfy2.png), pointer;
 }
 
-a:link{
-    color:lightblue;
-}
-
-a:visited{
-    color:lavender;
-}
-
-a:hover{
-    color:lavender;
-}
-
-a:active{
-    color:lavenderblush;
-}
 h1
 {
     font-family:"Audiowide", sans-serif;
@@ -84,6 +69,28 @@ button:hover{
     margin: 20px 5px;
 }
 
+.header-footer-info {
+    max-width: 100%;
+    padding: 0.7%;
+    margin: 0%;
+    margin-top: 2%;
+    background-color: #114978;
+}
+
+
+ .header-footer-info a:link {
+    color: lightblue;
+}
+
+
+.header-footer-info a:hover {
+    color: lavender;
+}
+
+.header-footer-info a:active {
+    color: lavenderblush;
+}
+
 .overarching-background {
     /* From https://css.glass */
     background: rgba(181, 245, 236, 0.6);
@@ -122,6 +129,17 @@ button:hover{
     border-radius: 15px 15px 0 0;
 }
 
+.header-for-nav-box {
+    width: 60%;
+    padding: 1%;
+    text-align: center;
+    color: aliceblue;
+    background-color: #114978;
+    margin-top: -38px;
+    margin-bottom: 10px;
+    border-radius: 15px 15px 0 0;
+}
+
 .basic-info-box {
     background-image: url(images/blue-polka-dot.png);
     border-style: solid;
@@ -134,11 +152,20 @@ button:hover{
     font-style: normal;
 }
 
-#central-info-box{
-
+.navigational-info-box {
+    background-image: url(images/scanlines-dark.png);
+    background-size: 200px;
+    border-style: solid;
+    border-color: #114978;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0% 0.7% 7px;
+    font-family: "Tomorrow", "Jockey One", "Kdam Thmor Pro", "Passion One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
-#sitemap-button{
+#central-info-box{
 
 }
 

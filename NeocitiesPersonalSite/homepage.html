@@ -43,45 +43,22 @@
             <!--leftmost boxes-->
             <div id="homepage-info-column" style="max-width:18%;">
                 <!--granular navigation for current page-->
-                <div class="basic-info-box" style="background-image: url(images/scanlines-dark.png); background-size: 200px; border-color: #114978 ">
+                <div class="navigational-info-box">
 
-                    <div class="tablike-header-for-info-box" style="background-color: #114978 ">
+                    <div class="header-for-nav-box">
                         <h3>Nav</h3>
                     </div>
                     <ul style="padding-left:20%; padding-top:7%; padding-bottom:7%">
                         <li><button onclick="SwapToMain();">Landing Page</button></li>
                         <li><button onclick="SwapToSitemap();">Sitemap</button></li>
-                        <li>Contacts</li>
+                        <li><button onclick="SwapToContacts();">Contacts</button ></li>
                         <li>Links / Resources</li>
                         <li>Beloved Things</li>
                         <li>Q&A</li>
                     </ul>
                 </div>
 
-                <div class="basic-info-box" style="margin-top: 30px; background-image: url(images/scanlines-dark.png); background-size: 200px; border-color: #114978 ">
-
-                    <div class="tablike-header-for-info-box" style="background-color: #114978 ">
-                        <h3>Updates</h3>
-                    </div>
-
-                    <div style="padding: 2%; height:150px; overflow:auto;">
-
-                        <h4>- 30/03/26 -</h4>
-                        <p style="font-size:13.5px">I FORGOT TO WRITE UPDATES NOOOO,, today I managed to actually finally get the "haeder and footer I don't need to copy-paste" working though! Also started writing the sitemap</p>
-                        <h4>- 26/03/26 -</h4>
-                        <p style="font-size:13.5px">Added scrollbar to updates, section at bottom of home for stamps! AND BLINKIES SCROLLING! There is an issue with a gap that I did a silly fix for, not sure if there's a proper one?'</p>
-                        <br />
-                        <h4>- 25/03/26 -</h4>
-                        <p style="font-size:13.5px">Added footer section, changed scrollbars and put together a Starfy cursor. :3 I think my next goal is adding scroll to updates and blinkies, and getting a guestbook up.</p>
-                        <br />
-                        <h4>- 24/03/26 -</h4>
-                        <p style="font-size:13.5px">Wrote up a to-do list for all the stuff on the site I'd like to eventually add. Tried to use js to generate the header and footer so I don't have to copypaste the HTML for every little change, but failed...</p>
-                        <br />
-                        <h4>- 23/03/26 -</h4>
-                        <p style="font-size:13.5px">Working on site layout still. Added a section for current games, and blinkies! (manually...) TODO: Is it possible to automate these?! </p>
-                    </div>
-
-                </div>
+                <updates-section></updates-section>
             </div>
 
 
@@ -146,10 +123,11 @@
                     </div>
 
                     <div style="display:flex; justify-content:center; align-items:center; flex-wrap: wrap;">
-                        <h3 style="padding:5%;">Click on my little dudes!</h3>
-                        <img src="images/cleffa-bw.png" style="width:55% " title="CLEFFA!!" alt="(Sprite of Cleffa from Pokemon Crystal)" />
-                        <img src="images/Guilmon.gif" style="width:45%" />
-                        <img src="images/ExVeemon.gif" style="width:45%" />
+                        <img src="images/cleffa.gif" style="width:20%; padding:5%; " title="CLEFFA!!" alt="(Sprite of Cleffa from Pokemon Crystal)" />
+                        <img src="images/lucario.gif" style="width:25%; padding:5% 10%;" title="Lucario :D"/>
+                        <img src="images/Guilmon.gif" style="width:40%" title="Guilmon ^-^"/>
+                        <img src="images/ExVeemon.gif" style="width:50%" title="ExVeemon :3"/>
+                        <img src="images/Dorugamon.gif" style="width:30%" title="Dorugamon >v<" />
                     </div>
                 </div>
 
@@ -202,24 +180,32 @@
 
         <div style="margin-bottom: 3%; padding:20px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; background-color: rgba(32, 117, 128, 0.5)">
 
-            <img src="images/Blinkies/Stamps/archive.webp" />
-            <img src="images/Blinkies/Stamps/cappucino-cinnamo.webp" />
-            <img src="images/Blinkies/Stamps/teacup-steaming.gif" />
-            <img src="images/Blinkies/Stamps/coding stamp.png" />
-            <img src="images/Blinkies/Stamps/espurr-kawaii-card.png" />
-            <img src="images/Blinkies/Stamps/pokemon-card-pile.png" />
-            <img src="images/Blinkies/Stamps/i-heart-wii.png" />
-            <img src="images/Blinkies/Stamps/mylaptop.png" />
-            <img src="images/Blinkies/Stamps/chococat.jpg" />
-            <img src="images/Blinkies/Stamps/sonicteam.gif" />
-            <img src="images/Blinkies/Stamps/don-osu.png" />
-            <img src="images/Blinkies/Stamps/evil.png" />
-            <img src="images/Blinkies/Stamps/cat-lover.webp" />
-            <img src="images/Blinkies/Stamps/neon-aquarium.png" />
-            <img src="images/Blinkies/Stamps/sleepy-cat.webp" />
+            <div style="margin-bottom: 3%; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+                <img src="images/Blinkies/Stamps/archive.webp" />
+                <img src="images/Blinkies/Stamps/sonicteam.gif" />
+                <img src="images/Blinkies/Stamps/sleepy-cat.webp" />
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+                
+                <img src="images/Blinkies/Stamps/cappucino-cinnamo.webp" />
+                <img src="images/Blinkies/Stamps/teacup-steaming.gif" />
+                <img src="images/Blinkies/Stamps/coding stamp.png" />
+                <img src="images/Blinkies/Stamps/espurr-kawaii-card.png" />
+                <img src="images/Blinkies/Stamps/pokemon-card-pile.png" />
+                <img src="images/Blinkies/Stamps/i-heart-wii.png" />
+                <img src="images/Blinkies/Stamps/mylaptop.png" />
+                <img src="images/Blinkies/Stamps/chococat.jpg" />
+                <img src="images/Blinkies/Stamps/don-osu.png" />
+                <img src="images/Blinkies/Stamps/evil.png" />
+                <img src="images/Blinkies/Stamps/cat-lover.webp" />
+                <img src="images/Blinkies/Stamps/neon-aquarium.png" />
+                <img src="images/Blinkies/Stamps/kawaii-critters.webp" />
+            </div>
+            
         </div>
     </div>
 
+    
 
     <page-footer></page-footer>
 
