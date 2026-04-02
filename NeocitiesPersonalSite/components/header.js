@@ -43,6 +43,8 @@ class UpdatesSection extends HTMLElement {
 
                     <div style="padding: 2%; height:150px; overflow:auto;">
 
+                        <h4>- 02/04/26 -</h4>
+                        <p style="font-size:13.5px">Have finally decided what to do with the critters widget, I've made them bounce when you click on them! Yesterday, I also drew a border of pixel crystals! :3</p>
                         <h4>- 31/03/26 -</h4>
                         <p style="font-size:13.5px">Wrote up the rest of the sitemap (for now), and working on reformatting the code so I have more CSS classes and less copy pasting.</p>
                         <br/>

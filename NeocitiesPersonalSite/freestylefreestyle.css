@@ -1,4 +1,4 @@
-/*need to set the body to this base value in order for banner to correctly reach screen edge,
+﻿/*need to set the body to this base value in order for banner to correctly reach screen edge,
 and it's not like this by default because... reasons???*/
 * {
     margin: 0%;
@@ -8,11 +8,6 @@ and it's not like this by default because... reasons???*/
     scrollbar-color: #207580 #B5F5EC;
 }
 
-.tomorrow-regular {
-    font-family: "Tomorrow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 body {
     background-image: url(images/paint-space-bkg.png);
@@ -25,9 +20,10 @@ a {
     cursor: url(images/UI/Starfy2.png), pointer;
 }
 
-h1
-{
-    font-family:"Audiowide", sans-serif;
+h1 {
+    font-family: "Audiowide", sans-serif;
+    color: #207580;
+    font-size:32px;
 }
 h2 {
     font-family: "Audiowide", sans-serif;
@@ -37,6 +33,19 @@ h3 {
 }
 h4 {
     font-family: "Audiowide", sans-serif;
+}
+
+h1:before, h1:after {
+    content: " ✧ ";
+}
+h3:before, h3:after {
+    font-size: 11px;
+    content: " 🟄 ";
+}
+
+ul {
+    list-style-image: url(images/swirlie.png);
+    list-style-type:square;
 }
 
 
@@ -54,20 +63,6 @@ button:hover{
     color:aquamarine
 }
 
-.construction-div-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 100px;
-    background-image: url(images/constructionbkg.jpg);
-    background-size: contain;
-}
-
-.basic-ahh-centered-div {
-    text-align: center;
-    padding: 20px 20px;
-    margin: 20px 5px;
-}
 
 .header-footer-info {
     max-width: 100%;
@@ -97,18 +92,28 @@ button:hover{
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     -webkit-backdrop-filter: blur(5.9px);
     border: 1px solid rgba(181, 245, 236, 0.32);
-    margin: 0% 10%;
-     /*#B5F5EC*/ /* border: 10px solid transparent; border-image: url(images/crystal-stone-illustration-png.png) 200px round; border-image-width:10px;*/
+    margin: 0% 1%;
+    
+    /*#B5F5EC*/ /* border: 10px solid transparent; border-image: url(images/crystal-stone-illustration-png.png) 200px round; border-image-width:10px;*/
 }
 
-.overarching-background-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 0%;
-    padding: 70px 1.5% 5% 1.5%;
-    margin: 0%;
-}
+    .overarching-background-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0%;
+        padding: 70px 1.5% 5% 1.5%;
+        margin: 0%;
+    }
+
+    .crystal-border-div {
+        margin: 0 10%;
+        border-image-source: url(images/crystal-border-doublesize.png);
+        border-image-slice: 0 27 0 27;
+        border-image-width: 0px 20px 0px 20px;
+        border-image-outset: 0px 0px 0px 0px;
+        border-image-repeat: round round;
+    }
 
 
 .homepage-info-column {
@@ -118,30 +123,8 @@ button:hover{
     align-items: flex-start;
 }
 
-.tablike-header-for-info-box {
-    width: 60%;
-    padding: 1%;
-    text-align: center;
-    color: aliceblue;
-    background-color: #207580;
-    margin-top: -38px;
-    margin-bottom: 10px;
-    border-radius: 15px 15px 0 0;
-}
-
-.header-for-nav-box {
-    width: 60%;
-    padding: 1%;
-    text-align: center;
-    color: aliceblue;
-    background-color: #114978;
-    margin-top: -38px;
-    margin-bottom: 10px;
-    border-radius: 15px 15px 0 0;
-}
-
 .basic-info-box {
-    background-image: url(images/blue-polka-dot.png);
+    background-image: url(images//lightblue-splotches.png);
     border-style: solid;
     border-color: #207580;
     border-radius: 10px;
@@ -151,6 +134,18 @@ button:hover{
     font-weight: 500;
     font-style: normal;
 }
+
+    .tablike-header-for-info-box {
+        max-width: 70%;
+        padding: 1%;
+        text-align: center;
+        font-size: 15px;
+        color: aliceblue;
+        background-color: #207580;
+        margin-top: -38px;
+        margin-bottom: 10px;
+        border-radius: 15px 15px 0 0;
+    }
 
 .navigational-info-box {
     background-image: url(images/scanlines-dark.png);
@@ -165,9 +160,24 @@ button:hover{
     font-style: normal;
 }
 
+    .header-for-nav-box {
+        max-width: 75%;
+        padding: 1%;
+        text-align: center;
+        color: aliceblue;
+        background-color: #114978;
+        margin-top: -38px;
+        margin-bottom: 10px;
+        border-radius: 15px 15px 0 0;
+    }
+
 #central-info-box{
 
 }
+
+
+
+/*homepage specific items*/
 
 .current-games-inner-box {
     display: flex;
@@ -177,11 +187,11 @@ button:hover{
     flex-wrap:wrap;
 }
 
-.current-games-inner-box img{
-    max-width:27%;
-    border-radius:10px;
-    border:2.5px dashed navy;
-}
+    .current-games-inner-box img{
+        max-width:27%;
+        border-radius:10px;
+        border:2.5px dashed navy;
+    }
 
 
 /*centering for the div and its copy so they're displayed the same. */
@@ -219,12 +229,82 @@ button:hover{
             animation-play-state: running;
         }
 
-@keyframes marquee-scroll {
-    0% {
-        transform: translateY(100%);
+        @keyframes marquee-scroll {
+            0% {
+                transform: translateY(100%);
+            }
+
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
+
+.critter-stationary {
+    cursor: url(images/UI/Starfy2.png), pointer;
+}
+
+.critter-bounce{
+    position:relative;
+    animation: bouncey 0.4s cubic-bezier(0.42, 0, 0.58, 1); /*supposedly the inverse of ease-in-out, i feel like it makes a difference*/
+}
+
+@keyframes bouncey{
+    0%{
+        top:0px;
+    }
+
+    25% {
+        top: -35px;
+    }
+
+    50% {
+        top:0px;
+    }
+
+    75%{
+        top:-10px;
     }
 
     100% {
-        transform: translateY(-100%);
+        top:0px;
     }
+}
+
+
+.stamps-sector {
+    margin-bottom: 3%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(32, 117, 128, 0.5)
+}
+
+.stamps-sector img{
+    padding:2px;
+}
+
+
+
+
+
+
+
+
+
+.construction-div-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 100px;
+    background-image: url(images/constructionbkg.jpg);
+    background-size: contain;
+}
+
+.basic-ahh-centered-div {
+    text-align: center;
+    padding: 20px 20px;
+    margin: 20px 5px;
 }

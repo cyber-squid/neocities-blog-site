@@ -35,173 +35,175 @@
 
     <!--the background and its margin. obvs-->
     <!--inner divs have margins on top so the first divs are equally distant from the header, and the background has padding on the bottom to complete the look-->
-    <div class="overarching-background">
+    <div class="crystal-border-div">
+        <div class="overarching-background">
 
-        <!--flexbox row container for all the flexbox columns that make the home page-->
-        <div class="overarching-background-container">
+            <!--flexbox row container for all the flexbox columns that make the home page-->
+            <div class="overarching-background-container">
 
-            <!--leftmost boxes-->
-            <div id="homepage-info-column" style="max-width:18%;">
-                <!--granular navigation for current page-->
-                <div class="navigational-info-box">
+                <!--leftmost boxes-->
+                <div id="homepage-info-column" style="max-width:18%;">
+                    <!--granular navigation for current page-->
+                    <div class="navigational-info-box">
 
-                    <div class="header-for-nav-box">
-                        <h3>Nav</h3>
-                    </div>
-                    <ul style="padding-left:20%; padding-top:7%; padding-bottom:7%">
-                        <li><button onclick="SwapToMain();">Landing Page</button></li>
-                        <li><button onclick="SwapToSitemap();">Sitemap</button></li>
-                        <li><button onclick="SwapToContacts();">Contacts</button ></li>
-                        <li>Links / Resources</li>
-                        <li>Beloved Things</li>
-                        <li>Q&A</li>
-                    </ul>
-                </div>
-
-                <updates-section></updates-section>
-            </div>
-
-
-            <!--center box-->
-            <div id="homepage-info-column" style="max-width:60%;">
-                <div id="central-info-box" class="basic-info-box" style="padding:4%;">
-
-                    <img src="images/stardust-pfp.png" style="float:right; min-width:15%; max-width:35%;" title="This is me. I'm Dusty :)"
-                         alt="(An image of a black, white and teal dragon with a fluffy mane)">
-
-                    <h1>Welcome!</h1>
-                    <p>
-                        You've reached my humble abode for all my stuff! At least, most of it. (Maybe I've got too much stuff. :p) I go by plenty of names,
-                        most commonly SquidInkarus, but you can call me by my sona name, Stardust, too!
-                        <br />
-                        I'm many things... a fluffy space dragon, video game developer and enjoyer, digital artist and frequent doodler, a programmer,
-                        newbie 3D all-round artist, crocheter, wannabe Youtuber, fandom lurker, Lego Movie fanatic, lover of reptiles, and collector of all
-                        sorts of silly toys and trinkets and things... the list goes on and on and on! If you're also a nerd we'll probably get along great xD
-                        <br /><br />
-                        This site is partly an exercise in webdev, but partly also a project I just think is neat. Old funky websites are cool! <br />
-                        While you're here, why not check out my other stuff? My art and things are here too! (Or at least I'm in the process of adding it!)
-                    </p>
-                </div>
-
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <div class="basic-info-box" style="width:50%">
-                        <h3>add music?! or maybe this is where you'd get my blinkies, then music could be in the upper right or smt</h3>
+                        <div class="header-for-nav-box">
+                            <h3>Nav</h3>
+                        </div>
+                        <ul style="padding-left:20%; padding-top:7%; padding-bottom:7%">
+                            <li><button onclick="SwapToMain();">Landing Page</button></li>
+                            <li><button onclick="SwapToSitemap();">Sitemap</button></li>
+                            <li><button onclick="SwapToContacts();">Contacts</button></li>
+                            <li>Links / Resources</li>
+                            <li>Beloved Things</li>
+                            <li>Q&A</li>
+                        </ul>
                     </div>
 
-                    <div class="basic-info-box" style="width:50%; margin-top:30px;">
+                    <updates-section></updates-section>
+                </div>
 
-                        <div class="tablike-header-for-info-box" style=" margin-top: -40px;">
-                            <!--i gotta figure out why it's rendering weird. wasn't doing that before-->
-                            <h3>Now  playing:</h3>
+
+                <!--center box-->
+                <div id="homepage-info-column" style="max-width:60%;">
+                    <div id="central-info-box" class="basic-info-box" style="padding:4%;">
+
+                        <img src="images/stardust-pfp.png" style="float:right; min-width:15%; max-width:35%;" title="This is me. I'm Dusty :)"
+                             alt="(An image of a black, white and teal dragon with a fluffy mane)">
+
+                        <h1 style="font-size:26px;" >Welcome to the den!</h1>
+                        <p>
+                            You've reached my humble abode for all my stuff! At least, most of it. (Maybe I've got too much stuff. :p) I go by plenty of names,
+                            most commonly SquidInkarus, but you can call me by my sona name, Stardust, too!
+                            <br />
+                            I'm many things... a fluffy space dragon, video game developer and enjoyer, digital artist and frequent doodler, a programmer,
+                            newbie 3D all-round artist, crocheter, wannabe Youtuber, fandom lurker, Lego Movie fanatic, lover of reptiles, and collector of all
+                            sorts of silly toys and trinkets and things... the list goes on and on and on! If you're also a nerd we'll probably get along great xD
+                            <br /><br />
+                            This site is partly an exercise in webdev, but partly also a project I just think is neat. Old funky websites are cool! <br />
+                            While you're here, why not check out my other stuff? My art and things are here too! (Or at least I'm in the process of adding it!)
+                        </p>
+                    </div>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <div class="basic-info-box" style="width:50%">
+                            <h3>add music?! or maybe this is where you'd get my blinkies, then music could be in the upper right or smt</h3>
                         </div>
 
-                        <div class="current-games-inner-box">
-                            <img src="images/Blinkies/Games/slime-rancher.jpg" title="Slime Rancher" alt="Slime Rancher" />
-                            <img src="images/Blinkies/Games/brc.jpg" title="Bomb Rush Cyberfunk" alt="Bomb Rush Cyberfunk" />
-                            <img src="images/Blinkies/Games/digimon-adventure-02.jpg" title="Digimon Adventure 02" alt="Digimon Adventure 02" />
+                        <div class="basic-info-box" style="width:50%; margin-top:30px;">
+
+                            <div class="tablike-header-for-info-box" style=" margin-top: -40px;">
+                                <!--i gotta figure out why it's rendering weird. wasn't doing that before-->
+                                <h3>Now  playing:</h3>
+                            </div>
+
+                            <div class="current-games-inner-box">
+                                <img src="images/Blinkies/Games/slime-rancher.jpg" title="Slime Rancher" alt="Slime Rancher" />
+                                <img src="images/Blinkies/Games/brc.jpg" title="Bomb Rush Cyberfunk" alt="Bomb Rush Cyberfunk" />
+                                <img src="images/Blinkies/Games/digimon-adventure-02.jpg" title="Digimon Adventure 02" alt="Digimon Adventure 02" />
+                            </div>
+                        </div>
+                        <!--fav music?!-->
+                        <!--things i'm playing-->
+                    </div>
+
+                    <div class="basic-info-box" style="padding:0;">
+                        <iframe src="https://fluffyspacedragon.atabook.org/" style="width:100%; height: 300px; border:none;" alt="guestbook"></iframe>
+                    </div>
+                </div>
+
+
+
+                <!--rightmost boxes-->
+                <div id="homepage-info-column" style="max-width: 20%;">
+                    <!--fun widget-->
+
+                    <div class="basic-info-box">
+
+                        <div class="tablike-header-for-info-box">
+                            <h3>Critters</h3>
+                        </div>
+
+                        <div style="display:flex; justify-content:center; align-items:center; flex-wrap: wrap;">
+                            <img src="images/cleffa.gif" onclick="DoBounceAnim(this)" class="critter-stationary" style="width:20%; padding:5%; " title="CLEFFA!!" alt="(Sprite of Cleffa from Pokemon Crystal)" />
+                            <img src="images/lucario.gif" onclick="DoBounceAnim(this)" class="critter-stationary" style="width:25%; padding:5% 10%;" title="Lucario :D" />
+                            <img src="images/Guilmon.gif" onclick="DoBounceAnim(this)" class="critter-stationary" style="width:40%" title="Guilmon ^-^" />
+                            <img src="images/ExVeemon.gif" onclick="DoBounceAnim(this)" class="critter-stationary" style="width:50%" title="ExVeemon :3" />
+                            <img src="images/Dorugamon.gif" onclick="DoBounceAnim(this)" class="critter-stationary" style="width:30%" title="Dorugamon >v<" />
                         </div>
                     </div>
-                    <!--fav music?!-->
-                    <!--things i'm playing-->
-                </div>
-
-                <div class="basic-info-box" style="padding:0;">
-                    <iframe src="https://fluffyspacedragon.atabook.org/" style="width:100%; height: 300px; border:none;" alt="guestbook"></iframe>
-                </div>
-            </div>
 
 
 
-            <!--rightmost boxes-->
-            <div id="homepage-info-column" style="max-width: 20%;">
-                <!--fun widget-->
+                    <!--should be on the right, under status-->
+                    <div class="basic-info-box" style="margin-top:30px; max-height:260px;">
 
-                <div class="basic-info-box">
+                        <div class="tablike-header-for-info-box">
+                            <h3>Blinkies!</h3>
+                        </div>
 
-                    <div class="tablike-header-for-info-box">
-                        <h3>Critters</h3>
-                    </div>
-
-                    <div style="display:flex; justify-content:center; align-items:center; flex-wrap: wrap;">
-                        <img src="images/cleffa.gif" style="width:20%; padding:5%; " title="CLEFFA!!" alt="(Sprite of Cleffa from Pokemon Crystal)" />
-                        <img src="images/lucario.gif" style="width:25%; padding:5% 10%;" title="Lucario :D"/>
-                        <img src="images/Guilmon.gif" style="width:40%" title="Guilmon ^-^"/>
-                        <img src="images/ExVeemon.gif" style="width:50%" title="ExVeemon :3"/>
-                        <img src="images/Dorugamon.gif" style="width:30%" title="Dorugamon >v<" />
-                    </div>
-                </div>
-
-
-
-                <!--should be on the right, under status-->
-                <div class="basic-info-box" style="margin-top:30px; max-height:260px;">
-
-                    <div class="tablike-header-for-info-box">
-                        <h3>Blinkies!</h3>
-                    </div>
-
-                    <div class="blinkies-inner-box" style="max-height: 250px;">
-                        <div style="">
-                            <img src="images/Blinkies/lucario.gif" />
-                            <img src="images/Blinkies/sparkle-on.gif" />
-                            <img src="images/Blinkies/fairy-type-trainer.gif" />
-                            <img src="images/Blinkies/fuck-ai-art.gif" />
-                            <img src="images/Blinkies/chocolate-fan.gif" />
-                            <img src="images/Blinkies/dvd-crazy.png" />
-                            <img src="images/Blinkies/ascii-yay.gif" />
-                            <img src="images/Blinkies/chiikawa.gif" />
-                            <img src="images/Blinkies/honey-bee.webp" />
-                            <img src="images/Blinkies/must-have-coffee.webp" />
-                            <img src="images/Blinkies/cool-to-crochet.webp" />
-                            <img src="images/Blinkies/i-have-a-dragon-soul.gif" />
-                            <img src="images/Blinkies/i-heart-my-3ds.webp" />
-                            <img src="images/Blinkies/i-will-stay-silly-forever.webp" />
-                            <img src="images/Blinkies/dont-take-my-whimsy.webp" />
-                            <img src="images/Blinkies/world-is-a-frick.gif" />
+                        <div class="blinkies-inner-box" style="max-height: 250px;">
+                            <div style="">
+                                <img src="images/Blinkies/lucario.gif" />
+                                <img src="images/Blinkies/sparkle-on.gif" />
+                                <img src="images/Blinkies/fairy-type-trainer.gif" />
+                                <img src="images/Blinkies/fuck-ai-art.gif" />
+                                <img src="images/Blinkies/chocolate-fan.gif" />
+                                <img src="images/Blinkies/dvd-crazy.png" />
+                                <img src="images/Blinkies/ascii-yay.gif" />
+                                <img src="images/Blinkies/chiikawa.gif" />
+                                <img src="images/Blinkies/honey-bee.webp" />
+                                <img src="images/Blinkies/must-have-coffee.webp" />
+                                <img src="images/Blinkies/cool-to-crochet.webp" />
+                                <img src="images/Blinkies/i-have-a-dragon-soul.gif" />
+                                <img src="images/Blinkies/i-heart-my-3ds.webp" />
+                                <img src="images/Blinkies/i-will-stay-silly-forever.webp" />
+                                <img src="images/Blinkies/dont-take-my-whimsy.webp" />
+                                <img src="images/Blinkies/world-is-a-frick.gif" />
+                            </div>
                         </div>
                     </div>
+
+                    <div class="basic-info-box" style="margin-top: 30px;">
+
+                        <div class="tablike-header-for-info-box">
+                            <h3>Webrings</h3>
+                        </div>
+
+                        <div style="display:flex; justify-content:center; align-items:center; padding-bottom:70px;">
+                            <p>None atm ;w;</p>
+                        </div>
+
+                    </div>
                 </div>
 
-                <div class="basic-info-box" style="margin-top: 30px;">
+            </div>
 
-                    <div class="tablike-header-for-info-box">
-                        <h3>Webrings</h3>
-                    </div>
 
-                    <div style="display:flex; justify-content:center; align-items:center; padding-bottom:70px;">
-                        <p>None atm ;w;</p>
-                    </div>
+            <div class="stamps-sector">
 
+                <div style="margin-bottom: 3%; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+                    <img src="images/Blinkies/Stamps/archive.webp" />
+                    <img src="images/Blinkies/Stamps/sonicteam.gif" />
+                    <img src="images/Blinkies/Stamps/sleepy-cat.webp" />
                 </div>
+                <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+
+                    <img src="images/Blinkies/Stamps/cappucino-cinnamo.webp" />
+                    <img src="images/Blinkies/Stamps/teacup-steaming.gif" />
+                    <img src="images/Blinkies/Stamps/coding stamp.png" />
+                    <img src="images/Blinkies/Stamps/espurr-kawaii-card.png" />
+                    <img src="images/Blinkies/Stamps/pokemon-card-pile.png" />
+                    <img src="images/Blinkies/Stamps/i-heart-wii.png" />
+                    <img src="images/Blinkies/Stamps/mylaptop.png" />
+                    <img src="images/Blinkies/Stamps/chococat.jpg" />
+                    <img src="images/Blinkies/Stamps/don-osu.png" />
+                    <img src="images/Blinkies/Stamps/evil.png" />
+                    <img src="images/Blinkies/Stamps/cat-lover.webp" />
+                    <img src="images/Blinkies/Stamps/neon-aquarium.png" />
+                    <img src="images/Blinkies/Stamps/kawaii-critters.webp" />
+                </div>
+
             </div>
-
-        </div>
-
-
-        <div style="margin-bottom: 3%; padding:20px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; background-color: rgba(32, 117, 128, 0.5)">
-
-            <div style="margin-bottom: 3%; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
-                <img src="images/Blinkies/Stamps/archive.webp" />
-                <img src="images/Blinkies/Stamps/sonicteam.gif" />
-                <img src="images/Blinkies/Stamps/sleepy-cat.webp" />
-            </div>
-            <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
-                
-                <img src="images/Blinkies/Stamps/cappucino-cinnamo.webp" />
-                <img src="images/Blinkies/Stamps/teacup-steaming.gif" />
-                <img src="images/Blinkies/Stamps/coding stamp.png" />
-                <img src="images/Blinkies/Stamps/espurr-kawaii-card.png" />
-                <img src="images/Blinkies/Stamps/pokemon-card-pile.png" />
-                <img src="images/Blinkies/Stamps/i-heart-wii.png" />
-                <img src="images/Blinkies/Stamps/mylaptop.png" />
-                <img src="images/Blinkies/Stamps/chococat.jpg" />
-                <img src="images/Blinkies/Stamps/don-osu.png" />
-                <img src="images/Blinkies/Stamps/evil.png" />
-                <img src="images/Blinkies/Stamps/cat-lover.webp" />
-                <img src="images/Blinkies/Stamps/neon-aquarium.png" />
-                <img src="images/Blinkies/Stamps/kawaii-critters.webp" />
-            </div>
-            
         </div>
     </div>
 

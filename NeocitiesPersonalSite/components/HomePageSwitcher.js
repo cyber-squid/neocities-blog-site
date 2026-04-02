@@ -7,7 +7,7 @@ function SwapToMain() {
         <img src="images/stardust-pfp.png" style="float:right; min-width:15%; max-width:35%;" title="This is me. I'm Dusty :)"
                          alt="(An image of a black, white and teal dragon with a fluffy mane)">
 
-                    <h1>Welcome!</h1>
+                    <h1 style="font-size:26px;" >Welcome to the den!</h1>
                     <p>
                         You've reached my humble abode for all my stuff! At least, most of it. (Maybe I've got too much stuff. :p) I go by plenty of names,
                         most commonly SquidInkarus, but you can call me by my sona name, Stardust, too!
@@ -21,6 +21,7 @@ function SwapToMain() {
                     </p>
         `;
 }
+
 
 function SwapToSitemap() {
     infobox.innerHTML =
@@ -146,10 +147,19 @@ function SwapToSitemap() {
     ;
 }
 
+function SwapToUpdateBlog() {
+    infobox.innerHTML = `
+    
+    `;
+}
+
 function SwapToContacts() {
     infobox.innerHTML = `
+
+    <h1>Find me elsewhere!</h1>
     <p>These are mainly sorted by how active I am, from "I at least check here nearly every day" to "I mean to be here more often but never am". This is
     partly a reference for me, too!</p>
+    <br/>
     <div style="display:flex; justify-content:space-evenly; align-items:center; flex-wrap: wrap; gep:10%;">
 
         <p><a href="https://cara.app/squidinkarus">Cara</a></p>
@@ -161,6 +171,7 @@ function SwapToContacts() {
     </div>
     `;
 }
+
 
 function SwapToQandA() {
     infobox.innerHTML = `
@@ -188,4 +199,12 @@ function SwapToQandA() {
         that I just had to. Plus, I've had this running inside joke with myself involving the idea that my OCs would nickname me Starfy because it's a cute way to shorten Stardust. :p
     </p>
     `;
+}
+
+function DoBounceAnim(bouncingCharacter) {
+    bouncingCharacter.classList.remove("critter-bounce");
+    /* checking the with of the item forces reflow, where the page is forced to visually update this element 
+    (now that we've removed the animating style class that's what we wanted). Then we can set the class to the animation again*/
+    void bouncingCharacter.offsetWidth; 
+    bouncingCharacter.classList.add("critter-bounce");
 }
