@@ -50,15 +50,21 @@ class UpdatesSection extends HTMLElement {
 
                     <div style="padding: 2%; height:150px; overflow:auto;">
 
+                        <h4>- 05/04/26 -</h4>
+                        <p style="font-size:13.5px">Added Resources tab! Also tossed Milcery into my critters cause why not. Imma be so fr I forgot what else lol. I changed link colours?</p>
+                        <br/>
                         <h4>- 03/04/26 -</h4>
                         <p style="font-size:13.5px">Some little adjustments to UI on the homepage, and added sound effects to critters.</p>
+                        <br/>
                         <h4>- 02/04/26 -</h4>
                         <p style="font-size:13.5px">Have finally decided what to do with the critters widget, I've made them bounce when you click on them! Yesterday, I also drew a border of pixel crystals! :3</p>
+                        <br/>
                         <h4>- 31/03/26 -</h4>
                         <p style="font-size:13.5px">Wrote up the rest of the sitemap (for now), and working on reformatting the code so I have more CSS classes and less copy pasting.</p>
                         <br/>
                         <h4>- 30/03/26 -</h4>
-                        <p style="font-size:13.5px">I FORGOT TO WRITE UPDATES NOOOO,, today I managed to actually finally get the "haeder and footer I don't need to copy-paste" working though! Also started writing the sitemap</p>
+                        <p style="font-size:13.5px">I FORGOT TO WRITE UPDATES NOOOO,, today I managed to actually finally get the "header and footer I don't need to copy-paste" working though! Also started writing the sitemap</p>
+                        <br/>
                         <h4>- 26/03/26 -</h4>
                         <p style="font-size:13.5px">Added scrollbar to updates, section at bottom of home for stamps! AND BLINKIES SCROLLING! There is an issue with a gap that I did a silly fix for, not sure if there's a proper one?'</p>
                         <br />

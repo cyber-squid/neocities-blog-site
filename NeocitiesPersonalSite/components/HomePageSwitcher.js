@@ -181,25 +181,25 @@ function SwapToResources() {
     <br/>
     <p><a href="https://zadzmo.org/code/nepenthes/">Nepenthes</a> - a digital tarpit to trap AI data-scraping webcrawlers in. Read the full site before using!
 
-    <h2 style="padding-top:4%;">PNGs, GIFs and More</h2>
-    <br/>
+    <br /><br />
+    <h2>PNGs, GIFs and More</h2>
+    <br />
 
     <h3>Made By Me</h3>
-    <br/>
 
-    <div style="display:flex; justify-content:space-evenly; align-items:center; flex-wrap: wrap;">
+    <div style="display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap; padding:4% 0;">
 
-        <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; padding-bottom:4% 0%;">
-            <h4>Crystal Border<h4>
-            <img src="images/crystal-border-doublesize.png"/>
+        <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; ">
+            <h4>Crystal Border</h4>
+            <img src="images/crystal-border-doublesize.png" />
         </div>
 
         <div style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
 
-            <h4>Starfy Cursor<h4>
+            <h4>Starfy Cursor</h4>
             <div style="display:flex; justify-content:space-evenly; align-items:center;">
-                <img src="images/UI/Starfy1.png"/>
-                <img src="images/UI/Starfy2.png"/>
+                <img src="images/UI/Starfy1.png" />
+                <img src="images/UI/Starfy2.png" />
             </div>
             <p><a href="https://www.starfywiki.org/wiki/Starfy">Source</a></p>
         </div>
@@ -207,20 +207,18 @@ function SwapToResources() {
     </div>
 
     <h3>Collected Items</h3>
-    <br/>
 
-    
-    <div style="display:flex; justify-content:space-evenly; align-items:center; flex-wrap: wrap; padding-bottom:4% 0%;">
+    <div style="display:flex; justify-content:space-evenly; align-items:center; flex-wrap: wrap; padding:4% 0;">
 
         <div style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
             <h4>Lego Spacer</h4>
-            <img src="images/lego-pastel-webspacer.gif"/>
+            <img src="images/lego-pastel-webspacer.gif" />
             <p>Source unknown :(</p>
         </div>
 
         <div style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
             <h4>Baby Pokemon Spacer</h4>
-            <img src="images/cleffa-igglybuff-togepi.gif" style="width:80px;"/>
+            <img src="images/cleffa-igglybuff-togepi.gif" style="width:80px;" />
             <p><a href="https://www.tumblr.com/petalade/650471108864360448?source=share">Source</a></p>
         </div>
 
