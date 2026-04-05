@@ -7,7 +7,7 @@ function SwapToMain() {
         <img src="images/stardust-pfp.png" style="float:right; min-width:15%; max-width:35%;" title="This is me. I'm Dusty :)"
                          alt="(An image of a black, white and teal dragon with a fluffy mane)">
 
-                    <h1 style="font-size:26px;" >Welcome to the den!</h1>
+                    <h1 style="font-size:29px;" >Welcome to the den!</h1>
                     <p>
                         You've reached my humble abode for all my stuff! At least, most of it. (Maybe I've got too much stuff. :p) I go by plenty of names,
                         most commonly SquidInkarus, but you can call me by my sona name, Stardust, too!
@@ -171,6 +171,64 @@ function SwapToContacts() {
     </div>
     `;
 }
+function SwapToResources() {
+    infobox.innerHTML = `
+    <h1>Cool Stuff</h1>
+    <p>I'll probably sort this into sections if I collate enough stuff to warrant that, but for now here are some things I've made / found that you might wanna use!</p>
+    <br/>
+
+    <h2>Links</h2>
+    <br/>
+    <p><a href="https://zadzmo.org/code/nepenthes/">Nepenthes</a> - a digital tarpit to trap AI data-scraping webcrawlers in. Read the full site before using!
+
+    <h2 style="padding-top:4%;">PNGs, GIFs and More</h2>
+    <br/>
+
+    <h3>Made By Me</h3>
+    <br/>
+
+    <div style="display:flex; justify-content:space-evenly; align-items:center; flex-wrap: wrap;">
+
+        <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; padding-bottom:4% 0%;">
+            <h4>Crystal Border<h4>
+            <img src="images/crystal-border-doublesize.png"/>
+        </div>
+
+        <div style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
+
+            <h4>Starfy Cursor<h4>
+            <div style="display:flex; justify-content:space-evenly; align-items:center;">
+                <img src="images/UI/Starfy1.png"/>
+                <img src="images/UI/Starfy2.png"/>
+            </div>
+            <p><a href="https://www.starfywiki.org/wiki/Starfy">Source</a></p>
+        </div>
+
+    </div>
+
+    <h3>Collected Items</h3>
+    <br/>
+
+    
+    <div style="display:flex; justify-content:space-evenly; align-items:center; flex-wrap: wrap; padding-bottom:4% 0%;">
+
+        <div style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
+            <h4>Lego Spacer</h4>
+            <img src="images/lego-pastel-webspacer.gif"/>
+            <p>Source unknown :(</p>
+        </div>
+
+        <div style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
+            <h4>Baby Pokemon Spacer</h4>
+            <img src="images/cleffa-igglybuff-togepi.gif" style="width:80px;"/>
+            <p><a href="https://www.tumblr.com/petalade/650471108864360448?source=share">Source</a></p>
+        </div>
+
+    </div>
+
+    
+    `;
+}
 
 
 function SwapToQandA() {
@@ -188,23 +246,45 @@ function SwapToQandA() {
     <h4>"Can I make my own astragon? / Can I draw your OCs?"</h4>
     <p>
         Yes, absolutely!! I'd be so estatic if you did! I won't claim "dragon with mane" is the most unique thing in the world, but I don't care for the concept of
-        closed species, so please feel free to make one of your own. Any and all fanart of my characters makes my day! Just try to keep it relatively clean if you'd like mee
+        closed species, so please feel free to make an astragon of your own. Any and all fanart of my characters makes my day! If you're comfy with it I'd love to even feature
+        what you make in my fanart section! Just try to keep it relatively clean if you'd like me to put it there (I'm not gonna demand no nsfw of anything I make bc I know that's
+        outta my hands if I put it on the internet lol)
     </p>
     <br />
+    <h4>"Can you draw / make..."</h4>
+    <p>
+        I'm an adult so my time is really important to me, so I'm sorry I can't do free art requests. I'm really grateful you appreciate my art though! I do sometimes do art
+        trades... but mostly on Art Fight! <br/>
+        If you're asking about commissions, I can try to make you most anything! You should check the commission tab for that though. If your request is a little unique or
+        you aren't really sure where your request would fall, please reach out to me! If you're as shy as I am promise I don't bite, I'm happy to talk :)
+    </p>
+    <br />
+    <h4>"Can I use (asset from your site)?"</h4>
+    <p>
+        Sure! I'd appreciate if you could credit me but I don't expect you to have a list of credits for your blinkies :p Please don't use my characters or art of them without credit
+        though, cause that'd be mean!
+    </p>
     <h4>"Why is your site's cursor Starfy? / Who's the little guy in your cursor?"</h4>
     <p>
-        That's Starfy, the main character from "The Legendary Starfy", a relatively obscure, early 2000s second-party Nintendo game series. Cute lil' guy, isn't he? I'm
-        not the world's biggest Starfy fan, so far I've only played the first, but for some reason I've had a passive interest in the man (star?) himself for a while. Probably
-        because he looks like an adorable star, and I love stars! That's why he's a perfect thematic fit for my site. His key art fits the most common states of a cursor so well
-        that I just had to. Plus, I've had this running inside joke with myself involving the idea that my OCs would nickname me Starfy because it's a cute way to shorten Stardust. :p
+        That's Starfy, the main character from "The Legendary Starfy", a relatively obscure, early 2000s second-party Nintendo game series. (He got 5 games and only the last ever
+        left Japan.) Cute lil' guy, isn't he? I'm not the world's biggest Starfy fan, so far I've only played the first, but for some reason I've had a passive interest in the
+        man (star?) himself for a while. Probably because he looks like an adorable star, and I love stars! That's why he's a perfect thematic fit for my site. His key art fits
+        the most common states of a cursor so well that I just had to. Plus, I've had this running inside joke with myself involving the idea that my OCs would nickname me
+        Starfy because it's a cute way to shorten Stardust. :p
     </p>
     `;
 }
 
-function DoBounceAnim(bouncingCharacter) {
-    bouncingCharacter.classList.remove("critter-bounce");
+function DoBounceAnim(bouncingCharacter, sfxFilename) {
+    bouncingCharacter.classList.remove("critter-bounce"); /* remove finished css anim if it's there */
+
+    let soundEffect = new Audio(sfxFilename);
+
     /* checking the with of the item forces reflow, where the page is forced to visually update this element 
-    (now that we've removed the animating style class that's what we wanted). Then we can set the class to the animation again*/
+    (now that we've removed the animating style class that's what we wanted). Then we can set the class to the animation again */
     void bouncingCharacter.offsetWidth; 
-    bouncingCharacter.classList.add("critter-bounce");
+    bouncingCharacter.classList.add("critter-bounce"); 
+
+    soundEffect.play();
+    soundEffect.currentTime = 0; /* reset so that we can immediately replay sound, if user is spam clicking the image */
 }

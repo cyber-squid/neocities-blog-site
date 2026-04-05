@@ -5,7 +5,7 @@ class PageHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML =`
                 <header style="font-family:Tomorrow, sans-serif;">
-        <div style="max-width:100%; margin:0; padding-top:90px; background-image:url(images/kirby-block-bkg.png); background-size:contain;">
+        <div style="max-width:100%; margin:0; padding-top:90px; background-image:url(images/Backgrounds/kirby-block-bkg.png); background-size:contain;">
 
             <img src="images/stardust-refsheet-border-top.png" style="width:75%; height:200px; position:absolute; top:0; pointer-events:none;" />
 
@@ -30,6 +30,13 @@ class PageHeader extends HTMLElement {
 // defines the <> tags for the element, which i ended up going with <page-header>
 customElements.define('page-header', PageHeader);
 
+class PageBackground extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        `;
+    }
+}
+
 
 class UpdatesSection extends HTMLElement {
     connectedCallback() {
@@ -43,6 +50,8 @@ class UpdatesSection extends HTMLElement {
 
                     <div style="padding: 2%; height:150px; overflow:auto;">
 
+                        <h4>- 03/04/26 -</h4>
+                        <p style="font-size:13.5px">Some little adjustments to UI on the homepage, and added sound effects to critters.</p>
                         <h4>- 02/04/26 -</h4>
                         <p style="font-size:13.5px">Have finally decided what to do with the critters widget, I've made them bounce when you click on them! Yesterday, I also drew a border of pixel crystals! :3</p>
                         <h4>- 31/03/26 -</h4>

@@ -53,7 +53,7 @@
                             <li><button onclick="SwapToMain();">Landing Page</button></li>
                             <li><button onclick="SwapToSitemap();">Sitemap</button></li>
                             <li><button onclick="SwapToContacts();">Contacts</button></li>
-                            <li>Links / Resources</li>
+                            <li><button onclick="SwapToResources();">Links / Resources</button></li>
                             <li>Beloved Things</li>
                             <li>Q&A</li>
                         </ul>
@@ -65,33 +65,40 @@
 
                 <!--center box-->
                 <div id="homepage-info-column" style="max-width:60%;">
-                    <div id="central-info-box" class="basic-info-box" style="padding:4%;">
+                    <div class="basic-info-box" style="padding:2%;">
 
-                        <img src="images/stardust-pfp.png" style="float:right; min-width:15%; max-width:35%;" title="This is me. I'm Dusty :)"
-                             alt="(An image of a black, white and teal dragon with a fluffy mane)">
+                        <div id="central-info-box" style="padding:2%; max-height: 500px; overflow: auto;">
+                            <img src="images/stardust-pfp.png" style="float:right; min-width:15%; max-width:35%;" title="This is me. I'm Dusty :)"
+                                 alt="(An image of a black, white and teal dragon with a fluffy mane)">
 
-                        <h1 style="font-size:26px;" >Welcome to the den!</h1>
-                        <p>
-                            You've reached my humble abode for all my stuff! At least, most of it. (Maybe I've got too much stuff. :p) I go by plenty of names,
-                            most commonly SquidInkarus, but you can call me by my sona name, Stardust, too!
-                            <br />
-                            I'm many things... a fluffy space dragon, video game developer and enjoyer, digital artist and frequent doodler, a programmer,
-                            newbie 3D all-round artist, crocheter, wannabe Youtuber, fandom lurker, Lego Movie fanatic, lover of reptiles, and collector of all
-                            sorts of silly toys and trinkets and things... the list goes on and on and on! If you're also a nerd we'll probably get along great xD
-                            <br /><br />
-                            This site is partly an exercise in webdev, but partly also a project I just think is neat. Old funky websites are cool! <br />
-                            While you're here, why not check out my other stuff? My art and things are here too! (Or at least I'm in the process of adding it!)
-                        </p>
+                            <h1 style="font-size:29px;">Welcome to the den!</h1>
+                            <p>
+                                You've reached my humble abode for all my stuff! At least, most of it. (Maybe I've got too much stuff. :p) I go by plenty of names,
+                                most commonly SquidInkarus, but you can call me by my sona name, Stardust, too!
+                                <br />
+                                I'm many things... a fluffy space dragon, video game developer and enjoyer, digital artist and frequent doodler, a programmer,
+                                newbie 3D all-round artist, crocheter, wannabe Youtuber, fandom lurker, Lego Movie fanatic, lover of reptiles, and collector of all
+                                sorts of silly toys and trinkets and things... the list goes on and on and on! If you're also a nerd we'll probably get along great xD
+                                <br /><br />
+                                This site is partly an exercise in webdev, but partly also a project I just think is neat. Old funky websites are cool! <br />
+                                While you're here, why not check out my other stuff? My art and things are here too! (Or at least I'm in the process of adding it!)
+                            </p>
+                        </div>
                     </div>
 
-                    <div style="display: flex; justify-content: center; align-items: center;">
-                        <div class="basic-info-box" style="width:50%">
-                            <h3>add music?! or maybe this is where you'd get my blinkies, then music could be in the upper right or smt</h3>
+                    <div style="display: flex; justify-content: center; align-items: stretch; ">
+                        <div class="basic-info-box" style="width: 50%; margin-top: 25px;">
+
+                            <div class="tablike-header-for-info-box">
+                                <h3>My Stamps</h3>
+                            </div>
+
+                            <p>Still working on them ;p</p>
                         </div>
 
-                        <div class="basic-info-box" style="width:50%; margin-top:30px;">
+                        <div class="basic-info-box" style="width:50%; margin-top:25px;">
 
-                            <div class="tablike-header-for-info-box" style=" margin-top: -40px;">
+                            <div class="tablike-header-for-info-box">
                                 <!--i gotta figure out why it's rendering weird. wasn't doing that before-->
                                 <h3>Now  playing:</h3>
                             </div>
@@ -124,11 +131,12 @@
                         </div>
 
                         <div style="display:flex; justify-content:center; align-items:center; flex-wrap: wrap;">
-                            <img src="images/cleffa.gif" onclick="DoBounceAnim(this)" class="critter-stationary" style="width:20%; padding:5%; " title="CLEFFA!!" alt="(Sprite of Cleffa from Pokemon Crystal)" />
-                            <img src="images/lucario.gif" onclick="DoBounceAnim(this)" class="critter-stationary" style="width:25%; padding:5% 10%;" title="Lucario :D" />
-                            <img src="images/Guilmon.gif" onclick="DoBounceAnim(this)" class="critter-stationary" style="width:40%" title="Guilmon ^-^" />
-                            <img src="images/ExVeemon.gif" onclick="DoBounceAnim(this)" class="critter-stationary" style="width:50%" title="ExVeemon :3" />
-                            <img src="images/Dorugamon.gif" onclick="DoBounceAnim(this)" class="critter-stationary" style="width:30%" title="Dorugamon >v<" />
+                            <img src="images/Critters/cleffa.gif" onclick="DoBounceAnim(this, 'other/cleffa.mp3')" class="critter-stationary" style="width:20%; padding:5%; " title="CLEFFA!!" alt="(Sprite of Cleffa from Pokemon Crystal)" />
+                            <img src="images/Critters/lucario.gif" onclick="DoBounceAnim(this, 'other/lucario.mp3')" class="critter-stationary" style="width:25%; padding:5% 10%;" title="Lucario :D" />
+                            <img src="images/Critters/milcery-model.gif" onclick="DoBounceAnim(this, 'other/milcery.mp3')" class="critter-stationary" style="width:25%; padding: 0 3%;" title="Milcery :v" />
+                            <img src="images/Critters/Guilmon.gif" onclick="DoBounceAnim(this, 'other/guilmon-noise.wav')" class="critter-stationary" style="width:40%" title="Guilmon ^-^" />
+                            <img src="images/Critters/ExVeemon.gif" onclick="DoBounceAnim(this, 'other/latios.mp3')" class="critter-stationary" style="width:50%" title="ExVeemon :3" />
+                            <img src="images/Critters/Dorugamon.gif" onclick="DoBounceAnim(this, 'other/snubbull.mp3')" class="critter-stationary" style="width:30%" title="Dorugamon >v<" />
                         </div>
                     </div>
 
@@ -207,7 +215,6 @@
         </div>
     </div>
 
-    
 
     <page-footer></page-footer>
 
